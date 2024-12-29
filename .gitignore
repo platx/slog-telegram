@@ -1,1 +1,4 @@
 .idea
+.vscode
+lint.log
+coverage.txt
