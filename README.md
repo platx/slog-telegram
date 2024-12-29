@@ -7,34 +7,12 @@ This is a handler for the [slog](https://pkg.go.dev/log/slog) package that sends
 go get github.com/platx/slog-telegram
 ```
 
-Minimum Go version: 1.22
+Minimum Go version: 1.23
 
 # Usage
-## Basic usage
-```go
-package main
-
-import (
-	"log/slog"
-
-	slogtelegram "github.com/platx/slog-telegram"
-)
-
-func main() {
-	handler := slogtelegram.DefaultHandler(
-		"YOUR_BOT_TOKEN", // Bot token (https://t.me/botfather)
-		1234567890, // Chat ID (https://t.me/get_id_bot)
-	)
-
-	logger := slog.New(handler)
-
-	logger.Info("Hello, World!", slog.Any("key1", "val1"))
-}
-```
-
-## Usage examples
-* [batch processing](./examples/batch/main.go)
-* [custom formatter](./examples/format/main.go)
+* [basic usage](./docs/base.md)
+* [batch processing](./docs/batch.md)
+* [custom formatter](./docs/format.md)
 
 # License
 MIT licensed. See the [LICENSE](./LICENSE) file for details.

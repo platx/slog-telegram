@@ -72,7 +72,7 @@ func NewSender(opts SenderOptions) Sender {
 		Verbose:   opts.Verbose,
 		Client:    opts.HTTPClient,
 		ParseMode: telebot.ModeHTML,
-		// Offline: true,
+		Offline:   true,
 	})
 	if err != nil {
 		panic(fmt.Sprintf("%s%v", errPrefix, err))

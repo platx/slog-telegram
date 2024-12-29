@@ -61,7 +61,9 @@ func (h *Handler) Enabled(_ context.Context, level slog.Level) bool {
 
 func (h *Handler) Handle(_ context.Context, record slog.Record) error {
 	record.AddAttrs(h.attrs...)
-	record.AddAttrs(slog.String("groups", strings.Join(h.groups, ", ")))
+	if len(h.groups) > 0 {
+		record.AddAttrs(slog.String("groups", strings.Join(h.groups, ", ")))
+	}
 
 	text, err := h.formatter.Format(record)
 	if err != nil {
