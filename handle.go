@@ -94,7 +94,7 @@ func (h *Handler) WithGroup(name string) slog.Handler {
 	}
 
 	c := h.clone()
-	c.groups = append(h.groups, name)
+	c.groups = append(c.groups, name)
 
 	return c
 }
