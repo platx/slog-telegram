@@ -11,10 +11,10 @@ import (
 func main() {
 	handler := slogtelegram.NewHandler(slogtelegram.HandlerOptions{
 		Sender: slogtelegram.SenderOptions{
-			Token:         "7585701408:AAGCZ5dDP4f4bjZLMj9soE4g4sovwvZcI2c", // Telegram bot token (https://t.me/botfather).
-			ChatID:        -1002465804452,                                   // Chat ID to send messages to (https://t.me/get_id_bot).
-			BatchSize:     10,                                               // Maximum number of messages to send in a single batch.
-			FlushInterval: time.Minute,                                      // Maximum duration to wait before sending a batch.
+			Token:         "YOUR_BOT_TOKEN", // Telegram bot token (https://t.me/botfather).
+			ChatID:        1234567890,       // Chat ID to send messages to (https://t.me/get_id_bot).
+			BatchSize:     10,               // Maximum number of messages to send in a single batch.
+			FlushInterval: time.Minute,      // Maximum duration to wait before sending a batch.
 		},
 	})
 	defer func() {
