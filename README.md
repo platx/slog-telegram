@@ -1,10 +1,10 @@
 # Telegram handler for slog
 [![Release](https://img.shields.io/github/release/platx/slog-telegram.svg?style=flat-square)](https://github.com/platx/slog-telegram/releases/latest)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-![testing](https://github.com/platx/slog-telegram/actions/workflows/test.yml/badge.svg)
 [![codecov](https://codecov.io/github/platx/slog-telegram/graph/badge.svg?token=LYZMRRHG3P)](https://codecov.io/github/platx/slog-telegram)
 [![godoc](https://godoc.org/github.com/platx/slog-telegram?status.svg)](https://godoc.org/github.com/platx/slog-telegram)
 [![Go Report Card](https://goreportcard.com/badge/github.com/platx/slog-telegram?style=flat-square)](https://goreportcard.com/report/github.com/platx/slog-telegram)
+
 This is a handler for the [slog](https://pkg.go.dev/log/slog) package that sends log messages to a [Telegram](https://telegram.org/) chat.
 
 ## Installation
